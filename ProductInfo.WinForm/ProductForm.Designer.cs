@@ -28,13 +28,14 @@
             lblName = new Label();
             lblPrice = new Label();
             txtPrice = new TextBox();
+            lblProductList = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Location = new Point(12, 30);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(436, 200);
@@ -43,14 +44,14 @@
             // 
             // txtProductName
             // 
-            txtProductName.Location = new Point(56, 230);
+            txtProductName.Location = new Point(56, 242);
             txtProductName.Name = "txtProductName";
             txtProductName.Size = new Size(168, 23);
             txtProductName.TabIndex = 1;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(12, 270);
+            btnAdd.Location = new Point(12, 282);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(75, 30);
             btnAdd.TabIndex = 2;
@@ -60,7 +61,7 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(105, 270);
+            btnUpdate.Location = new Point(105, 282);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(75, 30);
             btnUpdate.TabIndex = 3;
@@ -70,7 +71,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(200, 270);
+            btnDelete.Location = new Point(200, 282);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(75, 30);
             btnDelete.TabIndex = 4;
@@ -81,7 +82,7 @@
             // lblName
             // 
             lblName.AutoSize = true;
-            lblName.Location = new Point(12, 233);
+            lblName.Location = new Point(12, 245);
             lblName.Name = "lblName";
             lblName.Size = new Size(42, 15);
             lblName.TabIndex = 5;
@@ -90,7 +91,7 @@
             // lblPrice
             // 
             lblPrice.AutoSize = true;
-            lblPrice.Location = new Point(235, 230);
+            lblPrice.Location = new Point(235, 242);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(36, 15);
             lblPrice.TabIndex = 6;
@@ -98,16 +99,28 @@
             // 
             // txtPrice
             // 
-            txtPrice.Location = new Point(272, 233);
+            txtPrice.Location = new Point(272, 245);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(127, 23);
             txtPrice.TabIndex = 7;
+            // 
+            // lblProductList
+            // 
+            lblProductList.AutoSize = true;
+            lblProductList.BackColor = SystemColors.Menu;
+            lblProductList.Font = new Font("Segoe UI", 10F);
+            lblProductList.Location = new Point(12, 9);
+            lblProductList.Name = "lblProductList";
+            lblProductList.Size = new Size(85, 19);
+            lblProductList.TabIndex = 8;
+            lblProductList.Text = "Product List:";
             // 
             // ProductForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(460, 323);
+            Controls.Add(lblProductList);
             Controls.Add(txtPrice);
             Controls.Add(lblPrice);
             Controls.Add(lblName);
@@ -126,5 +139,6 @@
         private Label lblName;
         private Label lblPrice;
         private TextBox txtPrice;
+        private Label lblProductList;
     }
 }
