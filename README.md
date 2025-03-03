@@ -7,6 +7,7 @@ Build Action: Content
 Copy to Output Directory: Copy if newer or Copy always
 These settings ensure that the file is treated as content (not a code file) and is copied to the output directory when you build your project.
 
+
 #### 2. Install Required NuGet Package
 Since we are using Dapper, install it via NuGet:
 ```
